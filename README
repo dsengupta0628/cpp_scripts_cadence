@@ -1,0 +1,11 @@
+The Makefile compiles the codes with the main file provided inside the ./src. The corresponding header files are present inside the ./include folder. The resulting object files are stored inside the ./obj folder. 
+
+The PERL code "run_firs_multi_tocomput_errbudg.pl" runs the binary do_filter on a set of 10 audio signals using a particular type of 30-tap approximate FIR filter whose coefficients are provided in the ./coeffs_fir3.txt. 
+
+There are 55 different implementations of the approximate FIR filter. Each implementation uses a particular set of numbers as the number of approximate bits in each of the 30 adders. All this information (i.e., the 55x30 matrix) is provided in the file: ./data/Napx_vals.txt. 
+
+The audio signals are provided as text files within the ./data/folder. 
+
+The result is the filtered signal stored with the prefix "filt_" inside the ./auxfiles/ folder. 
+
+
